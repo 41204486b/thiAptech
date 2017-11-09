@@ -1,0 +1,111 @@
+@font-face{
+	font-family: Roboto;
+	src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face{
+	font-family: Roboto-Medium;
+	src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face{
+	font-family: Damion;
+	src: url(../fonts/Damion/Damion-Regular.ttf);
+}
+
+body{
+	min-height: 100%;
+}
+
+img#phone{
+	width: 26px;
+}
+p, a, span{
+	font-family: 'Roboto';
+}
+
+h2{
+	font-family: 'Damion';
+	color: #439833;
+	font-size: 35px;
+}
+img#us-flag{
+ 	width: 28px;	
+}
+.container-fluid{
+	/*padding: 0;*/
+}
+
+.row{
+	display: flex;
+	align-items: center;
+}
+#menu > li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 15px 15px;
+	margin-right: 0px;
+}
+
+#menu >li > a{
+	text-decoration: none;
+	font-size: 20px;
+	color: #2d2d2c;
+}
+#menu > li > a.active{
+	color: #429b39;
+	font-weight: bold;
+	border: 2px solid #e1e1e1;
+	border-radius: 6px;
+	padding: 15px 15px;
+	font-family: 'Roboto';
+} 
+
+img#logo{
+	width: 240px;
+}
+
+div#home{
+	padding: 0;
+	position: relative;
+}
+img#background{
+	width: 100%; 
+}
+
+div#cungcap{
+	position: absolute;
+	top:0;
+}
+span#cungcaphuonglieu{
+	padding: 40px 55px 40px 185px; 
+	color: #fff;
+	background: -webkit-linear-gradient(left, #3e8e07 , #26b63e);
+	font-size: 35px;
+	font-family: 'Roboto';
+}
+
+
+
+div#products{
+	padding-top: 30px;
+	background-color: #f5f5f6;
+}
+ul#menu_products{
+	padding-top: 50px;
+}
+ul#menu_products > li{
+	display: inline-block;
+	list-style-type: none;
+}
+
+ul#menu_products > li > a{
+	font-size: 23px;
+	color: #3d3e40;
+	margin: 0 35px;
+	text-decoration: none;
+}
+
+ul#menu_products > li > a.active{
+	color: #429a36;
+}
