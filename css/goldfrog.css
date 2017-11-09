@@ -109,3 +109,23 @@ ul#menu_products > li > a{
 ul#menu_products > li > a.active{
 	color: #429a36;
 }
+
+a.xemthem{
+	font-size: 18px;
+	font-family: 'Roboto';
+	color: #43952e;
+	text-decoration: none;
+	padding: 8px 40px;
+	border: 2px solid #c6c6c6;
+	border-radius: 20px;
+	
+}
+
+a.xemthem:hover{
+	background-color: #43952e;
+	color: #fff;
+}
+
+div#aboutus{
+	padding-top: 80px;
+}
