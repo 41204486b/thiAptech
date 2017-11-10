@@ -14,14 +14,14 @@
 </head>
 <body>
 
-	<header>
+	<header id="header">
 		<div class="container-fluid" style="border-bottom: 1px solid #f3f3f3;">
 			<div class="row" style="padding: 10px 0 10px 0;">
-				<div class="col-md-4 col-lg-4 text-center"><span>Chào mừng đến với công ty chúng tôi!</span></div>
-				<div class="col-md-offset-4 col-lg-offset-4 col-md-4 col-lg-4 text-center">
+				<div class="col-md-4 col-lg-4 col-xs-12 text-center"><span>Chào mừng đến với công ty chúng tôi!</span></div>
+				<div class="col-md-offset-4 col-lg-offset-4 col-md-4 col-lg-4 col-xs-12 text-center">
 					<img src="images/phone.ico" id="phone">
 					<span >Gọi chúng tôi <b>0236 3569 569</b></span>
-					<img src="images/us-flag.ico" id="us-flag">
+					<a href=""><img src="images/us-flag.ico" id="us-flag"></a>
 				</div>
 			</div>
 		</div>
@@ -33,7 +33,7 @@
 				</div>
 				<div class="col-md-8 col-lg-8">
 					<ul id="menu">
-						<li><a href="#home" class="active">TRANG CHỦ</a></li>
+						<li class="active"><a href="#home" >TRANG CHỦ</a></li>
 						<li><a href="#products">SẢN PHẨM</a></li>
 						<li><a href="#aboutus">VỀ CHÚNG TÔI</a></li>
 						<li><a href="#news">TIN TỨC</a></li>
@@ -59,84 +59,72 @@
 	</div>
 
 	<div id="products">
+
 		<div class="container text-center">
 			<span style="font-family: 'Roboto-Medium';font-size: 38px;color: #3d3e40;">	&#95;&#95;&#95;&#95;SẢN PHẨM</span>
 		</div>
 
 		<div class="container-fluid text-center">
 			<ul id="menu_products" class="tab">
-				<li><a href="#huongtopnotes" class="active">HƯƠNG TOP NOTES</a></li>
-				<li><a href="#huongreactions">HƯƠNG REACTIONS</a></li>
-				<li><a href="#chietxuat">CHIẾT XUẤT</a></li>
-				<li><a href="#tinhdau">TINH DẦU</a></li>
-				<li><a href="#huongthom">HƯƠNG THƠM</a></li>
+				<li class="active"><a class="tablinks" onclick="openTab(event, 'huongtopnotes')">HƯƠNG TOP NOTES</a></li>
+				<li><a class="tablinks" onclick="openTab(event, 'huongreactions')">HƯƠNG REACTIONS</a></li>
+				<li><a class="tablinks" onclick="openTab(event, 'chietxuat')">CHIẾT XUẤT</a></li>
+				<li><a class="tablinks" onclick="openTab(event, 'tinhdau')">TINH DẦU</a></li>
+				<li><a class="tablinks" onclick="openTab(event, 'huongthom')">HƯƠNG THƠM</a></li>
 			</ul>
-
-			<div class='col-md-offset-1 col-lg-offset-1 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1'>
-				<div id="huongreactions" class="tabcontent">
-					<div class="container-fluid">
-
-						<div class="col-md-4 col-lg-4">
-							<div class="col-md-offset-2 col-lg-offset-2 col-md-10 col-lg-10" style="background-color: #f9f9f9;padding:0;">
-								<img src="images/cate1.png" style="width: 100%;">
-								<h2>Flavors-Meal</h2>
-								<div class="text-left" style="padding-left: 50px;margin-bottom: 40px;">
-									<p>Chiết suất: <b>Savory</b></p>
-									<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
-									<p>Loại: <b>Paste/Powder</b></p>
-									<p>Thời hạn sử dụng: <b>360 ngày</b></p>
-									<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
-								</div>
-								<a href="#" class="xemthem">Xem thêm</a>
-								
-							</div>
-						</div>
-
-						<div class="col-md-4 col-lg-4">
-							<div class="col-md-offset-1 col-lg-offset-1 col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1" style="background-color: #f9f9f9;padding:0;">
-								<img src="images/cate2.png" style="width: 100%">
-								<h2>Flavors-Vegetable</h2>
-								<div class="text-left" style="padding-left: 50px; margin-bottom: 40px;">
-									<p>Chiết suất: <b>Savory</b></p>
-									<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
-									<p>Loại: <b>Paste/Powder</b></p>
-									<p>Thời hạn sử dụng: <b>360 ngày</b></p>
-									<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
-								</div>
-								<a href="#" class="xemthem">Xem thêm</a>
-							</div>
-						</div>
-
-						<div class="col-md-4 col-lg-4">
-							<div class="col-md-10 col-lg-10" style="background-color: #f9f9f9;padding:0;">
-								<img src="images/cate3.png" style="width: 100%;">
-								<h2>Flavors-Dairy</h2>
-								<div class="text-left" style="padding-left: 50px;margin-bottom: 40px;">
-									<p>Chiết suất: <b>Savory</b></p>
-									<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
-									<p>Loại: <b>Paste/Powder</b></p>
-									<p>Thời hạn sử dụng: <b>360 ngày</b></p>
-									<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
-								</div>
-								<a href="#" class="xemthem">Xem thêm</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>		
+		</div>
+		<div>
 			<div id="huongtopnotes" class="tabcontent">
-				<div class="container-fluid">
-					<div class="col-md-4 col-lg-4">
-						
+				<div class="container">
+					<div class="col-md-4 col-lg-4 text-center" style="background-color:;padding:0;text-align: center;">
+						<div style="width: 90%;display: inline-block;background-color: #f9f9f9;" class="text-center">
+							<a href="#"><img src="images/cate_1.png" style="width: 100%;"></a>
+							<a href="#"><h3>Flavors-Meal</h3></a>
+							<div class="text-left" style="padding-left: 50px;margin-bottom: 40px;width: 90%;background: #f9f9f9;">
+								
+								<p>Chiết suất: <b>Savory</b></p>
+								<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
+								<p>Loại: <b>Paste/Powder</b></p>
+								<p>Thời hạn sử dụng: <b>360 ngày</b></p>
+								<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
+							</div>
+							<a href="#" class="xemthem">Xem thêm</a>
+						</div>
 					</div>
-					<div class="col-md-4 col-lg-4">
-						
+
+					<div class="col-md-4 col-lg-4 text-center" style="background-color:;padding:0;text-align: center;">
+						<div style="width: 90%;display: inline-block;background-color: #f9f9f9;" class="text-center">
+							<a href="#"><img src="images/cate_2.png" style="width: 100%">
+							<a href="#"><h3>Flavors-Vegetable</h3></a>
+							<div class="text-left" style="padding-left: 50px; margin-bottom: 40px; width: 90%;">
+								<p>Chiết suất: <b>Savory</b></p>
+								<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
+								<p>Loại: <b>Paste/Powder</b></p>
+								<p>Thời hạn sử dụng: <b>360 ngày</b></p>
+								<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
+							</div>
+							<a href="#" class="xemthem">Xem thêm</a>
+						</div>
 					</div>
-					<div class="col-md-4 col-lg-4">
-						
+
+					<div class="col-md-4 col-lg-4 text-center" style="background-color:;padding:0; ">
+						<div style="width: 90%;display: inline-block;background-color: #f9f9f9;" class="text-center">
+							<a href="#"><img src="images/cate_3.png" style="width: 100%;"></a>
+							<a href="#"><h3>Flavors-Dairy</h3></a>
+							<div class="text-left" style="padding-left: 50px;margin-bottom: 40px;width: 90%;">
+								<p>Chiết suất: <b>Savory</b></p>
+								<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
+								<p>Loại: <b>Paste/Powder</b></p>
+								<p>Thời hạn sử dụng: <b>360 ngày</b></p>
+								<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
+							</div>
+							<a href="#" class="xemthem">Xem thêm</a>
+						</div>
 					</div>
 				</div>
 			</div>
+		</div>		
+
 			<div id="huongreactions" class="tabcontent">
 				<div class="container-fluid">
 					<div class="col-md-4 col-lg-4">
@@ -190,25 +178,169 @@
 				</div>
 			</div>
 			
-		</div>
+		
 	</div>
 
 	<div id="aboutus">
 		<div class="container text-center">
-			<span style="font-family: 'Roboto-Medium';font-size: 38px;color: #3d3e40;">	&#95;&#95;&#95;&#95;TẠI SAO CHỌN</span><span style="font-family: 'Roboto-Medium';font-size: 38px;color: #911d1e;">GOLDEN FROG</span>
+			<span style="font-family: 'Roboto-Medium';font-size: 38px;color: #3d3e40;">	&#95;&#95;&#95;&#95;TẠI SAO CHỌN </span><span style="font-family: 'Roboto-Medium';font-size: 38px;color: #911d1e;">GOLDEN FROG</span>
+		</div>
+
+		<div class="container">
+			<div class="col-md-6 col-lg-6">
+				<div class="col-md-11 col-lg-11">
+					<div>
+						<a href="#"><img src="images/process.png"></a>
+						<a href="#"><h3>Quy trình chặt chẽ</h3></a>
+						<p>Golden Frog là công ty sản xuất hương liệu, chiết xuất và tinh dầu hàng đầu Việt Nam. Hơn 10 năm qua công ty nỗ lực không ngừng</p>
+					</div>
+					<div>
+						<a href="#"><img src="images/technique.png"></a>
+						<a href="#"><h3>Công nghệ hiện đại</h3></a>
+						<p>Golden Frog là công ty sản xuất hương liệu, chiết xuất và tinh dầu hàng đầu Việt Nam. Hơn 10 năm qua công ty nỗ lực không ngừng</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-lg-6">
+				<div class="col-md-11 col-lg-11">
+				<div>
+					<a href="#"><img src="images/hand.png"></a>
+					<a href="#"><h3>Dịch vụ chuyên nghiệp</h3></a>
+					<p>Golden Frog là công ty sản xuất hương liệu, chiết xuất và tinh dầu hàng đầu Việt Nam. Hơn 10 năm qua công ty nỗ lực không ngừng</p>
+				</div>
+				<div>
+					<a href="#"><img src="images/bill.png"></a>
+					<a href="#"><h3>Chi phí hợp lý</h3></a>
+					<p>Golden Frog là công ty sản xuất hương liệu, chiết xuất và tinh dầu hàng đầu Việt Nam. Hơn 10 năm qua công ty nỗ lực không ngừng</p>
+				</div>
+				</div>
+			</div>	
 		</div>
 	</div>
 
 	<div id="news">
-		
+		<div class="container text-center">
+			<h2>&#95;&#95;&#95;&#95;TIN TỨC</h2>
+		</div>
+		<div class="container text-center">
+			<div class="col-md-4 col-lg-4 text-center">
+				<div style="width: 90%;display: inline-block;" class="text-left">
+					<a href="#"><img src="images/news1.jpg" width="100%"></a>
+					<a href="#"><h4>KHỞI CÔNG NHÀ MÁY CHẾ BIẾN DỪA Á CHÂU ACP Ở BẾN TRE</h4></a>
+					<p class="day">23/08/2016</p>
+					<p class="info">Golden Frog là công ty sản xuất hương liệu, chiết xuất và tinh dầu hàng đầu Việt Nam. Hơn 10 năm qua công ty nỗ lực không ngừng</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-lg-4 text-center">
+				<div style="width: 90%; display: inline-block;" class="text-left">
+					<a href="#"><img src="images/news2.jpg" width="100%"></a>
+					<a href="#"><h4>KHỞI CÔNG NHÀ MÁY CHẾ BIẾN DỪA Á CHÂU ACP Ở BẾN TRE</h4></a>
+					<p class="day">23/08/2016</p>
+					<p class="info">Golden Frog là công ty sản xuất hương liệu, chiết xuất và tinh dầu hàng đầu Việt Nam. Hơn 10 năm qua công ty nỗ lực không ngừng</p>
+				</div>
+			</div>
+			<div class="col-md-4 col-lg-4 text-center">
+				<div style="width: 90%; display: inline-block;" class="text-left">
+					<a href="#"><img src="images/news1.jpg" width="100%"></a>
+					<a href="#"><h4>KHỞI CÔNG NHÀ MÁY CHẾ BIẾN DỪA Á CHÂU ACP Ở BẾN TRE</h4></a>
+					<p class="day">23/08/2016</p>
+					<p class="info">Golden Frog là công ty sản xuất hương liệu, chiết xuất và tinh dầu hàng đầu Việt Nam. Hơn 10 năm qua công ty nỗ lực không ngừng</p>
+				</div>
+			</div>
+		</div>
+		<div class="container text-center">
+			<div class="row">
+				<a href="#" class="xemthem">Xem thêm</a>
+			</div>
+		</div>
 	</div>
 
 	<div id="contact">
-		
+		<div class="container-fluid" style="padding: 0;">
+			<div class="container text-center">
+				<h2>&#95;&#95;&#95;&#95;LIÊN LẠC VỚI CHÚNG TÔI</h2>
+			</div>
+			<div class="container text-center">
+				<div class="row">
+					<div class="col-md-offset-2 col-lg-offset-2 col-md-4 col-lg-4 col-xs-12">
+						<input type="text" name="" placeholder="Họ và tên" class="form-control" width="100%">
+					</div>
+					<div class="col-md-4 col-lg-4 col-xs-12">
+						<input type="phone" name="" placeholder="Số điện thoại" class="form-control" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8 col-xs-12">
+						<input type="email" name="" placeholder="Email" class="form-control" width="100%">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8 col-xs-12">
+						<textarea class="form-control" placeholder="Nội dung" rows="4"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-offset-2 col-lg-offset-2 col-md-4 col-lg-4 col-xs-12">
+						<input type="" name="" placeholder="Capcha" class="form-control" width="100%">
+					</div>
+					<!-- <div class="col-md-1">
+						
+					</div> -->
+				</div>
+				<div class="row text-center">
+					<a href="#" class="xemthem">Gửi</a>
+				</div>
+			</div>
+
+			<div class="container text-center">
+				
+			</div>
+		</div>
 	</div>
 
-	<footer>
-		
-	</footer>
+	<div id="footer">
+		<div class="container" style="border-bottom: 2px solid #e0e0e0;">
+			<div class="row" style="padding: 25px 0">
+				<div class="col-md-5 col-xs-12">
+				<span style="font-size: 16px;">Copyright 2017 GOLDEN FROG</span>
+				</div>
+				<div class="col-md-7 col-xs-12 text-right">
+					<a href="#"><img class="icon" src="images/facebook.png"></a>
+					<a href="#"><img class="icon" src="images/twitter.png"></a>
+					<a href="#"><img class="icon" src="images/youtube.png"></a>
+					<a href="#"><img class="icon" src="images/google-plus.png"></a>
+					<a href="#header"><img class="icon" src="images/top.png" width="32px"></a>
+				</div>	
+			</div>
+		</div>
+		<div class="container" style="padding: 25px 0 15px 0;">
+			<div class="col-md-4 col-lg-4 col-xs-12 office">
+				<h4>VĂN PHÒNG CHÍNH (NHÀ MÁY)</h4>
+				<p class="line-title-footer"></p>
+				<p>Số 31 Đường số 8, KCN Vietnam Singapore (VSIP), Thuận An, Bình Dương, Việt Nam</p>
+				<p>Điện thoại: 0650 3769036/37/38/39/40</p>
+				<p>Fax: (+84) 650 3769041/3769052</p>
+				<p>Email: <a href="#">info@goldenfrog.com.vn</a></p>
+				<p>Website: <a href="#">www.goldenfrog.com.vn</a></p>
+			</div>
+			<div class="col-md-4 col-lg-4 col-xs-12 office">
+				<h4>NHÀ MÁY CHIẾC XUẤT</h4>
+				<p class="line-title-footer"></p>
+				<p>Ấp Tân Hòa, xã Tân Hội Đông, huyện Châu Thành, Tiền Giang, Việt Nam.</p>
+			</div>
+			<div class="col-md-4 col-lg-4 col-xs-12 office">
+				<h4>VĂN PHÒNG ĐẠI DIỆN</h4>
+				<p class="line-title-footer"></p>
+				<p>P.O.Box 568.17 Yellow City Road, Ameria, New York, 12501, USA</p>
+				<p>Email: <a href="#">director_golden_frog@verizon.net</a></p>
+			</div>
+		</div>
+	</div>
+	
 </body>
+<script type="text/javascript">
+	// function openTab(event, tabName){
+	// 	alert('a');
+	// }
+</script>
 </html>
