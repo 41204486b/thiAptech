@@ -17,11 +17,11 @@
 	<header id="header">
 		<div class="container-fluid" style="border-bottom: 1px solid #f3f3f3;">
 			<div class="row" style="padding: 10px 0 10px 0;">
-				<div class="col-md-4 col-lg-4 col-xs-12 text-center"><span>Chào mừng đến với công ty chúng tôi!</span></div>
+				<div class="col-md-4 col-lg-4 col-xs-12 text-center "><span>Chào mừng đến với công ty chúng tôi!</span></div>
 				<div class="col-md-offset-4 col-lg-offset-4 col-md-4 col-lg-4 col-xs-12 text-center">
 					<img src="images/phone.ico" id="phone">
 					<span >Gọi chúng tôi <b>0236 3569 569</b></span>
-					<a href=""><img src="images/us-flag.ico" id="us-flag"></a>
+					<a href="#"><img src="images/us-flag.ico" id="us-flag"></a>
 				</div>
 			</div>
 		</div>
@@ -65,19 +65,18 @@
 		</div>
 
 		<div class="container-fluid text-center">
-			<ul id="menu_products" class="tab">
-				<li class="active"><a class="tablinks" onclick="openTab(event, 'huongtopnotes')">HƯƠNG TOP NOTES</a></li>
-				<li><a class="tablinks" onclick="openTab(event, 'huongreactions')">HƯƠNG REACTIONS</a></li>
-				<li><a class="tablinks" onclick="openTab(event, 'chietxuat')">CHIẾT XUẤT</a></li>
-				<li><a class="tablinks" onclick="openTab(event, 'tinhdau')">TINH DẦU</a></li>
-				<li><a class="tablinks" onclick="openTab(event, 'huongthom')">HƯƠNG THƠM</a></li>
+			<ul id="menu_products" class="tabs">
+				<li class="tab-link active" data-tab="huongtopnotes"><a href="#products" class="tablinks"">HƯƠNG TOP NOTES</a></li>
+				<li class="tab-link"  data-tab="huongreactions"><a href="#products" class="tablinks">HƯƠNG REACTIONS</a></li>
+				<li class="tab-link" data-tab="chietxuat"><a href="#products" class="tablinks">CHIẾT XUẤT</a></li>
+				<li class="tab-link" data-tab="tinhdau"><a href="#products" class="tablinks">TINH DẦU</a></li>
+				<li class="tab-link" data-tab="huongthom"><a href="#products" class="tablinks">HƯƠNG THƠM</a></li>
 			</ul>
-		</div>
-		<div>
-			<div id="huongtopnotes" class="tabcontent">
+			
+			<div id="huongtopnotes" class="tabcontent active">
 				<div class="container">
-					<div class="col-md-4 col-lg-4 text-center" style="background-color:;padding:0;text-align: center;">
-						<div style="width: 90%;display: inline-block;background-color: #f9f9f9;" class="text-center">
+					<div class="col-md-4 col-lg-4 text-center " style="padding: 0;">
+						<div class="text-center sanpham">
 							<a href="#"><img src="images/cate_1.png" style="width: 100%;"></a>
 							<a href="#"><h3>Flavors-Meal</h3></a>
 							<div class="text-left" style="padding-left: 50px;margin-bottom: 40px;width: 90%;background: #f9f9f9;">
@@ -92,8 +91,8 @@
 						</div>
 					</div>
 
-					<div class="col-md-4 col-lg-4 text-center" style="background-color:;padding:0;text-align: center;">
-						<div style="width: 90%;display: inline-block;background-color: #f9f9f9;" class="text-center">
+					<div class="col-md-4 col-lg-4 text-center" style="padding:0;">
+						<div class="text-center sanpham">
 							<a href="#"><img src="images/cate_2.png" style="width: 100%">
 							<a href="#"><h3>Flavors-Vegetable</h3></a>
 							<div class="text-left" style="padding-left: 50px; margin-bottom: 40px; width: 90%;">
@@ -107,8 +106,8 @@
 						</div>
 					</div>
 
-					<div class="col-md-4 col-lg-4 text-center" style="background-color:;padding:0; ">
-						<div style="width: 90%;display: inline-block;background-color: #f9f9f9;" class="text-center">
+					<div class="col-md-4 col-lg-4 text-center" style="padding:0; ">
+						<div class="text-center sanpham">
 							<a href="#"><img src="images/cate_3.png" style="width: 100%;"></a>
 							<a href="#"><h3>Flavors-Dairy</h3></a>
 							<div class="text-left" style="padding-left: 50px;margin-bottom: 40px;width: 90%;">
@@ -123,61 +122,207 @@
 					</div>
 				</div>
 			</div>
-		</div>		
+				
 
 			<div id="huongreactions" class="tabcontent">
-				<div class="container-fluid">
-					<div class="col-md-4 col-lg-4">
-						
+				<div class="container">
+					<div class="col-md-4 col-lg-4 text-center" style="padding:0;">
+						<div class="text-center sanpham">
+							<a href="#"><img src="images/cate_2.png" style="width: 100%;"></a>
+							<a href="#"><h3>Flavors-Meal</h3></a>
+							<div class="text-left" style="padding-left: 50px;margin-bottom: 40px;width: 90%;background: #f9f9f9;">
+								
+								<p>Chiết suất: <b>Savory</b></p>
+								<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
+								<p>Loại: <b>Paste/Powder</b></p>
+								<p>Thời hạn sử dụng: <b>360 ngày</b></p>
+								<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
+							</div>
+							<a href="#" class="xemthem">Xem thêm</a>
+						</div>
 					</div>
-					<div class="col-md-4 col-lg-4">
-						
+
+					<div class="col-md-4 col-lg-4 text-center" style="padding:0;">
+						<div class="text-center sanpham">
+							<a href="#"><img src="images/cate_1.png" style="width: 100%">
+							<a href="#"><h3>Flavors-Vegetable</h3></a>
+							<div class="text-left" style="padding-left: 50px; margin-bottom: 40px; width: 90%;">
+								<p>Chiết suất: <b>Savory</b></p>
+								<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
+								<p>Loại: <b>Paste/Powder</b></p>
+								<p>Thời hạn sử dụng: <b>360 ngày</b></p>
+								<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
+							</div>
+							<a href="#" class="xemthem">Xem thêm</a>
+						</div>
 					</div>
-					<div class="col-md-4 col-lg-4">
-						
+
+					<div class="col-md-4 col-lg-4 text-center" style="padding:0; ">
+						<div class="text-center sanpham">
+							<a href="#"><img src="images/cate_3.png" style="width: 100%;"></a>
+							<a href="#"><h3>Flavors-Dairy</h3></a>
+							<div class="text-left" style="padding-left: 50px;margin-bottom: 40px;width: 90%;">
+								<p>Chiết suất: <b>Savory</b></p>
+								<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
+								<p>Loại: <b>Paste/Powder</b></p>
+								<p>Thời hạn sử dụng: <b>360 ngày</b></p>
+								<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
+							</div>
+							<a href="#" class="xemthem">Xem thêm</a>
+						</div>
 					</div>
 				</div>
 			</div>
+
 			<div id="chietxuat" class="tabcontent">
-				<div class="container-fluid">
-					<div class="col-md-4 col-lg-4">
-						
+				<div class="container">
+					<div class="col-md-4 col-lg-4 text-center" style="padding:0;">
+						<div class="text-center sanpham">
+							<a href="#"><img src="images/cate_3.png" style="width: 100%;"></a>
+							<a href="#"><h3>Flavors-Meal</h3></a>
+							<div class="text-left" style="padding-left: 50px;margin-bottom: 40px;width: 90%;background: #f9f9f9;">
+								
+								<p>Chiết suất: <b>Savory</b></p>
+								<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
+								<p>Loại: <b>Paste/Powder</b></p>
+								<p>Thời hạn sử dụng: <b>360 ngày</b></p>
+								<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
+							</div>
+							<a href="#" class="xemthem">Xem thêm</a>
+						</div>
 					</div>
-					<div class="col-md-4 col-lg-4">
-						
+
+					<div class="col-md-4 col-lg-4 text-center" style="padding:0;">
+						<div class="text-center sanpham">
+							<a href="#"><img src="images/cate_2.png" style="width: 100%">
+							<a href="#"><h3>Flavors-Vegetable</h3></a>
+							<div class="text-left" style="padding-left: 50px; margin-bottom: 40px; width: 90%;">
+								<p>Chiết suất: <b>Savory</b></p>
+								<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
+								<p>Loại: <b>Paste/Powder</b></p>
+								<p>Thời hạn sử dụng: <b>360 ngày</b></p>
+								<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
+							</div>
+							<a href="#" class="xemthem">Xem thêm</a>
+						</div>
 					</div>
-					<div class="col-md-4 col-lg-4">
-						
+
+					<div class="col-md-4 col-lg-4 text-center" style="padding:0; ">
+						<div  class="text-center sanpham">
+							<a href="#"><img src="images/cate_1.png" style="width: 100%;"></a>
+							<a href="#"><h3>Flavors-Dairy</h3></a>
+							<div class="text-left" style="padding-left: 50px;margin-bottom: 40px;width: 90%;">
+								<p>Chiết suất: <b>Savory</b></p>
+								<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
+								<p>Loại: <b>Paste/Powder</b></p>
+								<p>Thời hạn sử dụng: <b>360 ngày</b></p>
+								<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
+							</div>
+							<a href="#" class="xemthem">Xem thêm</a>
+						</div>
 					</div>
 				</div>
 			</div>
+
 			<div id="tinhdau" class="tabcontent">
 				<div class="container">
-					<div class="col-md-4 col-lg-4">
-						
+					<div class="col-md-4 col-lg-4 text-center" style="padding:0;">
+						<div class="text-center sanpham">
+							<a href="#"><img src="images/cate_3.png" style="width: 100%;"></a>
+							<a href="#"><h3>Flavors-Meal</h3></a>
+							<div class="text-left" style="padding-left: 50px;margin-bottom: 40px;width: 90%;background: #f9f9f9;">
+								
+								<p>Chiết suất: <b>Savory</b></p>
+								<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
+								<p>Loại: <b>Paste/Powder</b></p>
+								<p>Thời hạn sử dụng: <b>360 ngày</b></p>
+								<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
+							</div>
+							<a href="#" class="xemthem">Xem thêm</a>
+						</div>
 					</div>
-					<div class="col-md-4 col-lg-4">
-						
+
+					<div class="col-md-4 col-lg-4 text-center" style="padding:0;">
+						<div class="text-center sanpham">
+							<a href="#"><img src="images/cate_1.png" style="width: 100%">
+							<a href="#"><h3>Flavors-Vegetable</h3></a>
+							<div class="text-left" style="padding-left: 50px; margin-bottom: 40px; width: 90%;">
+								<p>Chiết suất: <b>Savory</b></p>
+								<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
+								<p>Loại: <b>Paste/Powder</b></p>
+								<p>Thời hạn sử dụng: <b>360 ngày</b></p>
+								<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
+							</div>
+							<a href="#" class="xemthem">Xem thêm</a>
+						</div>
 					</div>
-					<div class="col-md-4 col-lg-4">
-						
+
+					<div class="col-md-4 col-lg-4 text-center" style="padding:0; ">
+						<div class="text-center sanpham">
+							<a href="#"><img src="images/cate_2.png" style="width: 100%;"></a>
+							<a href="#"><h3>Flavors-Dairy</h3></a>
+							<div class="text-left" style="padding-left: 50px;margin-bottom: 40px;width: 90%;">
+								<p>Chiết suất: <b>Savory</b></p>
+								<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
+								<p>Loại: <b>Paste/Powder</b></p>
+								<p>Thời hạn sử dụng: <b>360 ngày</b></p>
+								<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
+							</div>
+							<a href="#" class="xemthem">Xem thêm</a>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div id="huongthom" class="tabcontent">
 				<div class="container">
-					<div class="col-md-4 col-lg-4">
-						
+					<div class="col-md-4 col-lg-4 text-center" style="padding:0;">
+						<div class="text-center sanpham">
+							<a href="#"><img src="images/cate_1.png" style="width: 100%;"></a>
+							<a href="#"><h3>Flavors-Meal</h3></a>
+							<div class="text-left" style="padding-left: 50px;margin-bottom: 40px;width: 90%;background: #f9f9f9;">
+								
+								<p>Chiết suất: <b>Savory</b></p>
+								<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
+								<p>Loại: <b>Paste/Powder</b></p>
+								<p>Thời hạn sử dụng: <b>360 ngày</b></p>
+								<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
+							</div>
+							<a href="#" class="xemthem">Xem thêm</a>
+						</div>
 					</div>
-					<div class="col-md-4 col-lg-4">
-						
+
+					<div class="col-md-4 col-lg-4 text-center" style="padding:0;">
+						<div class="text-center sanpham">
+							<a href="#"><img src="images/cate_3.png" style="width: 100%">
+							<a href="#"><h3>Flavors-Vegetable</h3></a>
+							<div class="text-left" style="padding-left: 50px; margin-bottom: 40px; width: 90%;">
+								<p>Chiết suất: <b>Savory</b></p>
+								<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
+								<p>Loại: <b>Paste/Powder</b></p>
+								<p>Thời hạn sử dụng: <b>360 ngày</b></p>
+								<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
+							</div>
+							<a href="#" class="xemthem">Xem thêm</a>
+						</div>
 					</div>
-					<div class="col-md-4 col-lg-4">
-						
+
+					<div class="col-md-4 col-lg-4 text-center" style="padding:0; ">
+						<div class="text-center sanpham">
+							<a href="#"><img src="images/cate_2.png" style="width: 100%;"></a>
+							<a href="#"><h3>Flavors-Dairy</h3></a>
+							<div class="text-left" style="padding-left: 50px;margin-bottom: 40px;width: 90%;">
+								<p>Chiết suất: <b>Savory</b></p>
+								<p>Mô tả: <b>BBQ, Roasted, Stewed, Marrow</b></p>	
+								<p>Loại: <b>Paste/Powder</b></p>
+								<p>Thời hạn sử dụng: <b>360 ngày</b></p>
+								<p>Thời hạn dẫn: <b>10-20 ngày làm việc</b></p>
+							</div>
+							<a href="#" class="xemthem">Xem thêm</a>
+						</div>
 					</div>
 				</div>
 			</div>
-			
+		</div>	
 		
 	</div>
 
