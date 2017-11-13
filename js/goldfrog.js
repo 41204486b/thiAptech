@@ -2,9 +2,6 @@ $(document).ready(function(){
 	var tabIndex = 1;
 	var tabs = $('.tabcontent');
 
-	var slideIndex = 1;
-	var slides = $('.slidecontent');
-
 	$('ul#menu_products li a').click(function(){
 		var tab_id = $(this).parent().attr('data-tab');
 		$('ul#menu_products li').removeClass('active');
@@ -18,7 +15,7 @@ $(document).ready(function(){
 
 	function checktab(id_tab){
 		if(id_tab < 1 ){
-			slideIndex = 1;
+			tabIndex = 1;
 			
 		}else if(id_tab == 1){
 			$('#btn_pre').attr('src', 'images/btn_pre.png');
@@ -65,4 +62,50 @@ $(document).ready(function(){
 		tabIndex --;
 		checktab(tabIndex);
 	});
+
+	var slideIndex = 1;
+	var slides = $('.slidecontent');
+
+	$('#next_slider').click(function(){
+		slideIndex ++;
+		checkslide(slideIndex);
+	});
+
+	$('#pre_slider').click(function(){
+		slideIndex --;
+		checkslide(slideIndex);
+	});
+
+	function checkslide(id_slide){
+		if(id_slide < 1){
+			slideIndex = 1;
+		}else if(id_slide == 1){
+			$('#next_slider').attr('src', 'images/btn_next_visible_square.png');
+			$('#pre_slider').attr('src', 'images/btn_pre_square.png');
+			$('.slidecontent').removeClass('active');
+			$('#slider_chietxuat').addClass('active');
+			$('#thutuslider').html('01');
+		}else if(1 < id_slide && id_slide < slides.length){
+			$('#next_slider').attr('src', 'images/btn_next_visible_square.png');
+			$('#pre_slider').attr('src', 'images/btn_pre_visible_square.png');
+			$('.slidecontent').removeClass('active');
+			if(id_slide == 2){
+				$('#slider_huongtopnotes').addClass('active');
+				$('#thutuslider').html('02');
+			}else if(id_slide == 3){
+				$('#slider_huongreactions').addClass('active');
+				$('#thutuslider').html('03');
+			}else if(id_slide == 4){
+				$('#slider_tinhdau').addClass('active');
+				$('#thutuslider').html('04');
+			}
+		}else if( id_slide >= 5){
+			slideIndex = 5;
+			$('#next_slider').attr('src', 'images/btn_next_square.png');
+			$('#pre_slider').attr('src', 'images/btn_pre_visible_square.png');
+			$('.slidecontent').removeClass('active');
+			$('#slider_huongthom').addClass('active');
+			$('#thutuslider').html('05');
+		}
+	}
 })
