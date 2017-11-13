@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
+	<title>Golden Frog</title>
+	<link rel="shortcut icon" href="images/favicon.ico" />
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -17,7 +18,7 @@
 	<header id="header">
 		<div class="container-fluid" style="border-bottom: 1px solid #f3f3f3;">
 			<div class="row" style="padding: 10px 0 10px 0;">
-				<div class="col-md-4 col-lg-4 col-xs-12 text-center "><span>Chào mừng đến với công ty chúng tôi!</span></div>
+				<div class="col-md-4 col-lg-4 col-xs-12 text-center hidden-xs"><span>Chào mừng đến với công ty chúng tôi!</span></div>
 				<div class="col-md-offset-4 col-lg-offset-4 col-md-4 col-lg-4 col-xs-12 text-center">
 					<img src="images/phone.ico" id="phone">
 					<span >Gọi chúng tôi <b>0236 3569 569</b></span>
@@ -51,8 +52,37 @@
 			<img src="images/1.jpg" id="background">
 			<div class="col-md-offset-5 col-lg-offset-5 col-md-7 col-lg-7" id="cungcap">
 				<span id="cungcaphuonglieu">CUNG CẤP HƯƠNG LIỆU</span>
-				<div id="slider">
-					
+				<div id="slider" class="col-md-offset-3 col-md-8">
+					<div id="slider_chietxuat" class="slidecontent active">
+						<p class="header_slide">Chiết Xuất Tinh Dầu</p>
+						<p class="footer_slide"></p>
+						<p class="content_slide">Golden Frog là công ty sản xuất hương liệu, chiết xuất và tinh dầu hàng đầu Việt Nam. Hơn 10 năm qua công ty nỗ lực không ngừng để trở thành người tiên phong trong việc tạo sản phẩm hương liệu "Sản xuất tại Việt Nam". Trở thành người bạn tin cậy đồng hành cùng sự phát triển của các nhà sản xuất thực phẩm tại Việt Nam</p>
+					</div>
+					<div id="slider_huongtopnotes" class="slidecontent">
+						<p class="header_slide">Hương Top Notes</p>
+						<p class="footer_slide"></p>
+						<p class="content_slide">Golden Frog là công ty sản xuất hương liệu, chiết xuất và tinh dầu hàng đầu Việt Nam. Hơn 10 năm qua công ty nỗ lực không ngừng để trở thành người tiên phong trong việc tạo sản phẩm hương liệu "Sản xuất tại Việt Nam". Trở thành người bạn tin cậy đồng hành cùng sự phát triển của các nhà sản xuất thực phẩm tại Việt Nam</p>
+					</div>
+					<div id="slider_huongreactions" class="slidecontent">
+						<p class="header_slide">Hương Reactions</p>
+						<p class="footer_slide"></p>
+						<p class="content_slide">Golden Frog là công ty sản xuất hương liệu, chiết xuất và tinh dầu hàng đầu Việt Nam. Hơn 10 năm qua công ty nỗ lực không ngừng để trở thành người tiên phong trong việc tạo sản phẩm hương liệu "Sản xuất tại Việt Nam". Trở thành người bạn tin cậy đồng hành cùng sự phát triển của các nhà sản xuất thực phẩm tại Việt Nam</p>
+					</div>
+					<div id="slider_tinhdau" class="slidecontent">
+						<p class="header_slide">Tinh Dầu</p>
+						<p class="footer_slide"></p>
+						<p class="content_slide">Golden Frog là công ty sản xuất hương liệu, chiết xuất và tinh dầu hàng đầu Việt Nam. Hơn 10 năm qua công ty nỗ lực không ngừng để trở thành người tiên phong trong việc tạo sản phẩm hương liệu "Sản xuất tại Việt Nam". Trở thành người bạn tin cậy đồng hành cùng sự phát triển của các nhà sản xuất thực phẩm tại Việt Nam</p>
+					</div>
+					<div id="slider_huongthom" class="slidecontent">
+						<p class="header_slide">Hương Thơm</p>
+						<p class="footer_slide"></p>
+						<p class="content_slide">Golden Frog là công ty sản xuất hương liệu, chiết xuất và tinh dầu hàng đầu Việt Nam. Hơn 10 năm qua công ty nỗ lực không ngừng để trở thành người tiên phong trong việc tạo sản phẩm hương liệu "Sản xuất tại Việt Nam". Trở thành người bạn tin cậy đồng hành cùng sự phát triển của các nhà sản xuất thực phẩm tại Việt Nam</p>
+					</div>
+					<div id="demsoslider">
+						<span id="thutuslider">01</span><span style="padding-right: 19px;">/05</span>
+						<img src="images/btn_pre_square.png" id="pre_slider">
+						<img src="images/btn_next_visible_square.png" id="next_slider">
+					</div>
 				</div>
 			</div>
 		</div>
@@ -66,11 +96,11 @@
 
 		<div class="container-fluid text-center">
 			<ul id="menu_products" class="tabs">
-				<li class="tab-link active" data-tab="huongtopnotes"><a href="#products" class="tablinks"">HƯƠNG TOP NOTES</a></li>
-				<li class="tab-link"  data-tab="huongreactions"><a href="#products" class="tablinks">HƯƠNG REACTIONS</a></li>
-				<li class="tab-link" data-tab="chietxuat"><a href="#products" class="tablinks">CHIẾT XUẤT</a></li>
-				<li class="tab-link" data-tab="tinhdau"><a href="#products" class="tablinks">TINH DẦU</a></li>
-				<li class="tab-link" data-tab="huongthom"><a href="#products" class="tablinks">HƯƠNG THƠM</a></li>
+				<li class="tab-link active" data-id='1' data-tab="huongtopnotes"><a href="#products" class="tablinks"">HƯƠNG TOP NOTES</a></li>
+				<li class="tab-link" data-id='2'  data-tab="huongreactions"><a href="#products" class="tablinks">HƯƠNG REACTIONS</a></li>
+				<li class="tab-link" data-id='3' data-tab="chietxuat"><a href="#products" class="tablinks">CHIẾT XUẤT</a></li>
+				<li class="tab-link" data-id='4' data-tab="tinhdau"><a href="#products" class="tablinks">TINH DẦU</a></li>
+				<li class="tab-link" data-id='5' data-tab="huongthom"><a href="#products" class="tablinks">HƯƠNG THƠM</a></li>
 			</ul>
 			
 			<div id="huongtopnotes" class="tabcontent active">
@@ -273,7 +303,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="huongthom" class="tabcontent">
+			<div id="huongthom" class="tabcontent ">
 				<div class="container">
 					<div class="col-md-4 col-lg-4 text-center" style="padding:0;">
 						<div class="text-center sanpham">
@@ -321,6 +351,10 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="container text-center" style="padding-top: 30px;">
+				<img src="images/btn_pre.png" id="btn_pre" style="margin-right: 8px;cursor: pointer;">
+				<img src="images/btn_next_visible.png" id="btn_next" style="margin-left: 8px;cursor: pointer;">
 			</div>
 		</div>	
 		
@@ -405,38 +439,39 @@
 			<div class="container text-center">
 				<h2>&#95;&#95;&#95;&#95;LIÊN LẠC VỚI CHÚNG TÔI</h2>
 			</div>
-			<div class="container text-center">
-				<div class="row">
-					<div class="col-md-offset-2 col-lg-offset-2 col-md-4 col-lg-4 col-xs-12">
-						<input type="text" name="" placeholder="Họ và tên" class="form-control" width="100%">
+			<form method="GET" action="">
+				<div class="container text-center">
+					<div class="row">
+						<div class="col-md-offset-2 col-lg-offset-2 col-md-4 col-lg-4 col-xs-12">
+							<input type="text" name="" placeholder="Họ và tên" class="form-control" width="100%">
+						</div>
+						<div class="col-md-4 col-lg-4 col-xs-12">
+							<input type="phone" name="" placeholder="Số điện thoại" class="form-control" width="100%">
+						</div>
 					</div>
-					<div class="col-md-4 col-lg-4 col-xs-12">
-						<input type="phone" name="" placeholder="Số điện thoại" class="form-control" width="100%">
+					<div class="row">
+						<div class="col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8 col-xs-12">
+							<input type="email" name="" placeholder="Email" class="form-control" width="100%">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8 col-xs-12">
+							<textarea class="form-control" placeholder="Nội dung" rows="4"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-offset-2 col-lg-offset-2 col-md-4 col-lg-4 col-xs-12">
+							<input type="" name="" placeholder="Capcha" class="form-control" width="100%">
+						</div>
+						<!-- <div class="col-md-1">
+							
+						</div> -->
+					</div>
+					<div class="row text-center">
+						<a href="#" class="xemthem">Gửi</a>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8 col-xs-12">
-						<input type="email" name="" placeholder="Email" class="form-control" width="100%">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-offset-2 col-lg-offset-2 col-md-8 col-lg-8 col-xs-12">
-						<textarea class="form-control" placeholder="Nội dung" rows="4"></textarea>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-offset-2 col-lg-offset-2 col-md-4 col-lg-4 col-xs-12">
-						<input type="" name="" placeholder="Capcha" class="form-control" width="100%">
-					</div>
-					<!-- <div class="col-md-1">
-						
-					</div> -->
-				</div>
-				<div class="row text-center">
-					<a href="#" class="xemthem">Gửi</a>
-				</div>
-			</div>
-
+			</form>
 			<div class="container text-center">
 				
 			</div>
@@ -484,8 +519,6 @@
 	
 </body>
 <script type="text/javascript">
-	// function openTab(event, tabName){
-	// 	alert('a');
-	// }
+	
 </script>
 </html>
