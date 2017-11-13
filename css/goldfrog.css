@@ -83,7 +83,17 @@ img#us-flag{
 img#logo{
 	width: 240px;
 }
+.fixed {
+    position:fixed;
+    top:0;
+    width: 100%;
+}
 
+div#fixed_menu{
+	z-index: 999;
+	/*width: 100%;*/
+	background-color: #fff;
+}
 div#home{
 	padding: 0;
 	position: relative;
@@ -95,7 +105,7 @@ img#background{
 
 div#cungcap{
 	position: absolute;
-	top:0;
+	top:15%;
 }
 
 span#cungcaphuonglieu{
@@ -104,8 +114,14 @@ span#cungcaphuonglieu{
 	background: -webkit-linear-gradient(left, #3e8e07 , #26b63e);
 	font-size: 35px;
 	font-family: 'Roboto';
+	position: absolute;
+	top:600;
 }
-
+div#home div#slider{
+	position: absolute;
+	top: 180px;
+	clear: both;
+}
 div#slider p.header_slide{
 	font-family: 'Lobster';
 	font-size: 40px;
@@ -220,7 +236,13 @@ div#products div.tabcontent.active{
 	display: block;
 	
 }
+div#products div.text-left.mota{
+	padding-left: 50px;
+	margin-bottom: 40px;
+	width: 90%;
+	background: #f9f9f9;
 
+}
 div#aboutus{
 	padding-top: 80px;
 }
@@ -270,7 +292,33 @@ div#footer h4{
 	font-family: 'Roboto-Medium';
 	color: #3d3e40;
 }
+@media only screen and (max-width: 1024px){
+	span#cungcaphuonglieu{
+		padding-left: 120px;
+	}
+}
 
+@media only screen and (max-width: 768px){
+	span#cungcaphuonglieu{
+		font-size: 25px;
+		padding:25px 30px 25px 80px;
+
+	}
+
+	div#home div#slider{
+		top:100px;
+	}
+	h3{
+		font-size: 28px;
+	}
+	div#products div.text-left.mota{
+		padding-left: 10px;
+	}
+
+	div#aboutus{
+		padding-top: 40px;
+	}
+}
 @media only screen and (max-width: 420px){
 	div#news p.info{
 		padding-bottom: 30px;

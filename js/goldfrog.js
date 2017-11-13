@@ -1,4 +1,20 @@
 $(document).ready(function(){
+
+	//fixed menu
+
+	$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > 48) {
+        $('#fixed_menu').addClass('fixed');
+    } else {
+        $('#fixed_menu').removeClass('fixed');
+    }
+	});
+
+	$('ul#menu li a').click(function(){
+		$('ul#menu li').removeClass('active');
+		$(this).parent().addClass('active');
+	});
+
 	var tabIndex = 1;
 	var tabs = $('.tabcontent');
 
