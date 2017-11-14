@@ -34,7 +34,7 @@ h2{
 	font-family: 'Roboto-Medium';
 	font-size: 38px;
 	color: #3d3e40;
-	padding: 35px 0;
+	padding: 70px 0 35px 0;
 }
 
 h3{
@@ -87,6 +87,8 @@ img#logo{
     position:fixed;
     top:0;
     width: 100%;
+    border-bottom: 2px solid #797D7F;
+    box-shadow: 2px;
 }
 
 div#fixed_menu{
@@ -135,6 +137,7 @@ div#slider p.footer_slide{
 
 div#slider p.content_slide{
 	font-family: 'Roboto';
+	text-align: justify;
 }
 
 div#slider div.slidecontent{
@@ -163,7 +166,7 @@ div#slider div#demsoslider span{
 }
 
 div#products{
-	padding-top: 30px;
+	padding-top: 90px;
 	background-color: #f5f5f6;
 	padding-bottom: 50px;
 }
@@ -296,6 +299,9 @@ div#footer h4{
 	span#cungcaphuonglieu{
 		padding-left: 120px;
 	}
+	ul#menu >li > a{
+		font-size: 14px;
+	}
 }
 
 @media only screen and (max-width: 768px){
@@ -308,25 +314,86 @@ div#footer h4{
 	div#home div#slider{
 		top:100px;
 	}
+	ul#menu >li > a{
+		font-size: 11px;
+	}
+	/*h2{
+		padding-top: 50px !important;
+		margin-top: 0;
+	}*/
 	h3{
 		font-size: 28px;
+	}
+	div#products{
+		padding-top: 50px;
 	}
 	div#products div.text-left.mota{
 		padding-left: 10px;
 	}
-
+	ul#menu_products{
+		padding: 30px 0 0 0;
+	}
+	ul#menu_products li a{
+		font-size: 17px;
+		margin: 0 7px;
+	}
 	div#aboutus{
 		padding-top: 40px;
 	}
 }
 @media only screen and (max-width: 420px){
+
+	span#cungcaphuonglieu{
+		width: 100%;
+		top: 0;
+		right: 0;
+		left: 0;
+		font-size: 22px;
+	}
+
+	ul#menu{
+		display: none;
+	}
+	img#background{
+		display: none;
+	}
+	
+	div#cungcap{
+		position: relative;
+	}
+	div#home div#slider{
+		position: relative;
+	}
+
+	p.header_slide{
+		font-size: 35px !important;
+	}
 	div#news p.info{
 		padding-bottom: 30px;
 	}
 	div#footer img.icon{
 		width: 24px;
 	}
+
 	div#footer div.office{
 		padding-bottom: 20px;
 	}
+
+	div#products{
+		margin-top: 130px;
+		padding: 20;
+	}
+	div#products div.text-left.mota{
+		padding-left: 25px;
+	}
+
+
+	img#logo{
+		width: 200px;
+	}
+
+	ul#menu > li > a{
+		color: #333;
+	}
+
 }
