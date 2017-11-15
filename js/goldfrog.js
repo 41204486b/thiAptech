@@ -1,8 +1,10 @@
 $(document).ready(function(){
-	$('ul#menu').slicknav();
-	//fixed menu
-	$(window).resize(function(){
-		if($(this).width() > 500){
+	checkscroll();
+	$(window).resize(checkscroll);
+	
+	function checkscroll(){
+		if($(window).width() > 500){
+			$('#fixed_menu').addClass('row');
 			$(window).bind('scroll', function () {
 			    if ($(window).scrollTop() > 48) {
 			        $('#fixed_menu').addClass('fixed');
@@ -15,10 +17,12 @@ $(document).ready(function(){
 			    }
 			});
 		}else{
-
+			$('#fixed_menu').removeClass('row');
+			$(window).bind('scroll', function () {
+				$('#fixed_menu').removeClass('fixed');
+			});
 		}
-	});
-	
+	}
 
 	$('ul#menu li a').click(function(){
 		$('ul#menu li').removeClass('active');
